@@ -1,0 +1,99 @@
+@import "Color";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  .status {
+  text-align: center;
+  margin-bottom: 10px;
+  color:@light-blue;
+  }
+  .board-row {
+    margin:auto;
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+
+
+/* p:after
+{
+content:"台词：-";
+background-color:yellow;
+color:red;
+font-weight:bold;
+} */
+/* :after  在每个 <p> 元素后面插入内容，并设置所插入内容的样式*/
+
+.square {
+  background: #fff;
+  border: 1px solid @light-blue;
+  color:@light-blue;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
